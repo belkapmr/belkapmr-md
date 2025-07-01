@@ -2,36 +2,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Белка ПМР — Зоомагазин и зоопарк</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Белка ПМР — Зоопарк и зоомагазин</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>🐿 Зоопарк "Белка ПМР" — Онлайн-магазин</h1>
-    <p>Покупайте билеты, животных, корма и аксессуары прямо на сайте!</p>
+  <header class="hero">
+    <h1>Зоопарк "Белка ПМР"</h1>
+    <p>Добро пожаловать в наш мир природы и дружбы с животными!</p>
+    <div class="hero-buttons">
+      <a href="#tickets" class="btn green">Купить билет онлайн</a>
+      <a href="#shop" class="btn light">Магазин зоотоваров</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#tickets">Билеты</a>
-    <a href="#animals">Животные</a>
-    <a href="#food">Корма</a>
-    <a href="#cages">Клетки и аквариумы</a>
-    <a href="#souvenirs">Сувениры</a>
-  </nav>
+  <section class="categories">
+    <div class="cat-item">🎟 Билеты и услуги<br><span>от 40 руб</span></div>
+    <div class="cat-item">🥕 Корма и товары</div>
+    <div class="cat-item">🦜 Животные и птицы</div>
+    <div class="cat-item">🎁 Сувениры</div>
+  </section>
 
-  <div class="container" id="products-container">
-    <!-- Продукты будут подгружены здесь -->
-  </div>
+  <section class="about">
+    <h2>О нашем зоопарке</h2>
+    <p>Белка ПМР — уютный контактный зоопарк в Тирасполе, где можно пообщаться с кроликами, енотами, сурикатами, попугаями, питонами и другими животными.</p>
+    <p>📍 ул. Карла Либкнехта, 306 (ТЦ Ян, 2 этаж) | 🕙 Ежедневно с 10:00 до 20:00</p>
+    <div class="gallery">
+      <img src="images/zoo1.jpg">
+      <img src="images/zoo2.jpg">
+      <img src="images/zoo3.jpg">
+    </div>
+  </section>
 
-  <a href="admin.html" class="admin-button">🔧 Админка</a>
+  <section class="reviews">
+    <h2>Отзывы наших гостей</h2>
+    <div class="review">«Отличный зоопарк! Животные ухоженные, детям понравилось»<br><b>— Анна К., Тирасполь</b></div>
+    <div class="review">«Очень атмосферное место, можно гладить животных!»<br><b>— Иван М., Бендеры</b></div>
+    <div class="review">«Крутое место для фото и радости детям»<br><b>— Кристина В., Паркань</b></div>
+  </section>
+
+  <section class="payment">
+    <h2>Оплата онлайн</h2>
+    <p>Оплатите билеты или товары через QR-код ниже:</p>
+    <img src="images/qr_example.png" alt="QR для оплаты" class="qr">
+    <code>MO24.G.D03457</code>
+  </section>
 
   <footer>
-    <p>© 2025 Зоопарк "Белка ПМР" | Тирасполь | belkapmr.shop</p>
+    <p>© 2025 Зоопарк "Белка ПМР" | belkapmr.shop</p>
   </footer>
-
-  <script src="products.js"></script>
 </body>
 </html>
